@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./fonts/NotoSans-Light.woff2') format('woff2'),
+    url('./fonts/NotoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./fonts/NotoSans-Bold.woff2') format('woff2'),
+    url('./fonts/NotoSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('./fonts/TTCommons-Bold.woff2') format('woff2'),
+        url('./fonts/TTCommons-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('./fonts/TTCommons-ExtraBold.woff2') format('woff2'),
+        url('./fonts/TTCommons-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {margin: 0;padding: 12px;}
+#container {margin-top: 2vh;margin-bottom: 100px;}
+.lg1 {font-family: 'TT Commons', sans-serif; display: block;font-size: 30vw;line-height: 1;font-weight: 900;letter-spacing: -2px;}
+.lg2 {font-family: 'TT Commons', sans-serif; margin-top: 8px;display: block;font-size: 25vw;line-height: 1;font-weight: 900;letter-spacing: -1px;}
+.md {font-family: 'TT Commons', sans-serif; display: block;font-weight: 700;font-size: 18vw;letter-spacing: -2px;}
+.sm {font-family: 'Noto Sans KR', sans-serif; display: block;font-size: 16vw;font-weight: 100;}
+.xs {font-family: 'TT Commons', sans-serif; margin-top: 10px;display: block;font-size: 7vw;font-weight: 700;letter-spacing: -1px;}
+a {text-decoration: none;color: black;}
+footer {font-family: 'Noto Sans KR', sans-serif; position: fixed;bottom: 20px;font-size: 12px;}
+footer p {margin: 4px 0 0;color: #666;}
+.company {margin-bottom: 10px;font-weight: bold;}
+.info {margin-top: 4px;letter-spacing: -0.5px;}
+.copyright {margin-top: 12px; letter-spacing: -.5px;}
+
+@media (min-width: 1024px) {
+    #container {margin: 0 auto;width: fit-content;min-width: 1000px;}
+    .lg1 {font-size: 200px;}
+    .lg2 {font-size: 250px;}
+    .md {font-size: 180px;}
+    .sm {font-size: 160px;}
+    .xs {font-size: 70px;}
+}
