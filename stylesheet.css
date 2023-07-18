@@ -14,7 +14,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'TT Commons';
     src: url('./fonts/TTCommons-Bold.woff2') format('woff2'),
@@ -23,7 +22,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'TT Commons';
     src: url('./fonts/TTCommons-ExtraBold.woff2') format('woff2'),
@@ -42,17 +40,22 @@ body {margin: 0;padding: 12px;}
 .sm {font-family: 'Noto Sans KR', sans-serif; display: block;font-size: 16vw;font-weight: 100;}
 .xs {font-family: 'TT Commons', sans-serif; margin-top: 10px;display: block;font-size: 7vw;font-weight: 700;letter-spacing: -1px;}
 a {text-decoration: none;color: black;}
-footer {font-family: 'Noto Sans KR', sans-serif; position: fixed;bottom: 20px;font-size: 12px;}
-footer p {margin: 4px 0 0;color: #666;}
-.company {margin-bottom: 10px;font-weight: bold;}
-.info {margin-top: 4px;letter-spacing: -0.5px;}
-.copyright {margin-top: 12px; letter-spacing: -.5px;}
+footer {font-family: 'Noto Sans KR', sans-serif; position: fixed;bottom: 20px;font-size: 11px;}
+footer p {margin: 0;color: #666;}
+.company {font-weight: bold;}
+.info {letter-spacing: -0.5px;}
+.copyright {letter-spacing: -.5px;}
+
+.show{display: block}
+.hide {display: none}
 
 @media (min-width: 1024px) {
+    body {margin: 0;padding: 0;}
     #container {margin: 0 auto;width: fit-content;min-width: 1000px;}
     .lg1 {font-size: 200px;}
     .lg2 {font-size: 250px;}
     .md {font-size: 180px;}
     .sm {font-size: 160px;}
     .xs {font-size: 70px;}
+    footer {margin: 0 auto; left:calc((100vw - 1000px) * 0.5)}
 }

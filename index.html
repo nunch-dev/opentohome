@@ -18,6 +18,7 @@
     <p class="copyright">© 2023 All Rights Reserved by Hlworldwide communication & lab</p>
 </footer>
 <script>
+  const $footer = document.querySelector('footer');
   new TypeIt('#text', {
     speed: 100,
     loop: true,
@@ -26,21 +27,23 @@
       .type('<span class="lg1">OPEN<br />TO<br />HOME</span>')
       .type('<a href="http://www.opentohome.com" target="_blank"><span class="xs">www.opentohome.com</span></a>')
       .pause(2000)
-      .delete(500)
+      .exec(() => $footer.classList.add('hide'))
+      .empty()
       .type('<span class="sm">세상에서<br />가장 쉬운<br />집 찾기가<br />시작됩니다.</span>')
       .pause(2000)
-      .delete(500)
+      .empty()
       .type('<span class="sm">톡으로<br />부동산 전문가<br />상담이<br />시작됩니다.</span>')
       .pause(2000)
-      .delete(500)
+      .empty()
       .type('<span class="sm">브랜드<br />아파트에 대한<br />모든 정보가<br />담깁니다.</span>')
       .pause(2000)
-      .delete(500)
+      .exec(() => $footer.classList.remove('hide'))
+      .empty()
       .type('<span class="md">2023.08</span>')
       .type('<span class="lg2">GRAND<br/>OPEN</span>')
       .type('<a href="http://www.opentohome.com" target="_blank"><span class="xs">www.opentohome.com</span></a>')
       .pause(2000)
-      .delete(500)
+      .empty()
       .go();
 </script>
 </body>
