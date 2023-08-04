@@ -5,39 +5,25 @@
     <title>오픈투홈 - 에이치엘더블유</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <style>
-        @media screen and (max-aspect-ratio: 1219/685) {
-            #background_video {
-                width: auto;
-                height: 100vh;
-            }
-        }
-
         body {
             margin: 0;
             padding: 0;
         }
-
-        #video_area {
-            padding: 0;
-            width: 100vw;
+        #video {
+            width: 100%;
             height: 100vh;
-            overflow: hidden;
-            position: absolute;
-        }
-
-        #background_video {
-            z-index: -1;
-            width: 100vw;
-            position: absolute;
+            /* object-fit의 값에 따라 종횡비의 차이가 있습니다 */
+            /* fill: 종횡비를 깨트려서라도 화면을 가득 채움. 일부 작은 기기(아이폰SE 등)에서 해상도가 깨질 수 있음 */
+            /* contain: 종횡비에 맞게 화면을 가득 채움. 일부 작은 기기는 레터박스가 생김 */
+            /* cover: 비디오가 잘리더라도, 화면을 가득 채움 */
+            object-fit: fill;
         }
     </style>
 </head>
 <body>
-<div id="video_area">
-    <video muted autoplay loop id="background_video">
-        <source src="videos/1st.mp4" type="video/mp4">
+    <video muted autoplay loop id="video">
+        <source src="videos/4st.mp4" type="video/mp4">
         <strong>Your browser does not support the video tag.</strong>
     </video>
-</div>
 </body>
 </html>
